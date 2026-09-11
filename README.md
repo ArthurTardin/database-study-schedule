@@ -43,7 +43,7 @@ Este documento registra a jornada de estudo estruturado e self-directed de Banco
 - Exercícios: implementação do modelo da Etapa 2 em SQL real; alteração de tabela existente
 - **[DEBUG]** schema com FK mal declarada / tipo de coluna incompatível com dado esperado
 
-## 🔁 Checkpoint 1 (obrigatório antes de seguir pra Etapa 4)
+## Checkpoint 1 (obrigatório antes de seguir pra Etapa 4)
 
 Revisitar o modelo de domínio criado na Etapa 2 e o ambiente montado na Etapa 1, e confirmar que o schema real implementado na Etapa 3 bate 100% com a modelagem conceitual — inclusive cardinalidade e decisões de 3NF já tomadas.
  
@@ -78,7 +78,7 @@ Revisitar o modelo de domínio criado na Etapa 2 e o ambiente montado na Etapa 1
 - Exercícios: paginação; agregação com `HAVING`
 - **[DEBUG]** query que usa `WHERE` no lugar de `HAVING` (ou vice-versa) e produz resultado plausível mas errado
 
-## 🔁 Checkpoint 2 (obrigatório antes de seguir pra Etapa 7)
+## Checkpoint 2 (obrigatório antes de seguir pra Etapa 7)
 
 Revisitar os dados populados na Etapa 4 e os filtros da Etapa 5, agora produzindo um relatório agregado e filtrado (Etapa 6) sobre os mesmos dados — sem reescrever o schema do zero.
  
@@ -112,7 +112,7 @@ Revisitar os dados populados na Etapa 4 e os filtros da Etapa 5, agora produzind
 - Exercícios: combinação de queries com os três operadores
 - **[DEBUG]** uso indevido de `UNION` escondendo duplicata que deveria aparecer
 
-## 🔁 Checkpoint 3 (obrigatório antes de seguir pra Etapa 10)
+## Checkpoint 3 (obrigatório antes de seguir pra Etapa 10)
 
 Revisitar o exercício de JOIN (Etapa 7) e o de subquery (Etapa 8), reescrevendo partes com set operations onde fizer sentido. **A partir daqui, leitura de código real**: analisar um schema/conjunto de queries de um repositório open source real e explicar as decisões de modelagem encontradas.
  
@@ -147,7 +147,7 @@ Revisitar o exercício de JOIN (Etapa 7) e o de subquery (Etapa 8), reescrevendo
 - **[TESTE]** validar comportamento sob isolation level específico
 - **[DEBUG]** transação que não trata erro e deixa lock preso
 
-## 🔁 Checkpoint 4 (obrigatório antes de seguir pra Etapa 13)
+## Checkpoint 4 (obrigatório antes de seguir pra Etapa 13)
 
 Revisitar as constraints da Etapa 11 dentro de uma transação que tenta violar `CHECK`/FK de propósito, observando o `ROLLBACK` acontecer. Os testes escritos na Etapa 11 devem ser reexecutados dentro desse cenário transacional.
  
@@ -185,7 +185,7 @@ Revisitar as constraints da Etapa 11 dentro de uma transação que tenta violar 
 - Exercícios: ranking e total acumulado
 - **[DEBUG]** uso de `RANK()` onde o correto seria `ROW_NUMBER()`, gerando contagem errada em caso de empate
 
-## 🔁 Checkpoint 5 (obrigatório antes de seguir pra Etapa 16)
+## Checkpoint 5 (obrigatório antes de seguir pra Etapa 16)
 
 Revisitar a view da Etapa 10, reconstruindo-a com uma window function por dentro, com os testes das Etapas 11/14 cobrindo o novo comportamento.
  
@@ -220,7 +220,7 @@ Revisitar a view da Etapa 10, reconstruindo-a com uma window function por dentro
 - Exercícios: diagnosticar e corrigir uma query lenta real (ou sintética)
 - **[DEBUG]** query lenta plantada de propósito, causa não revelada
 
-## 🔁 Checkpoint 6 (obrigatório antes da Etapa 19)
+## Checkpoint 6 (obrigatório antes da Etapa 19)
 
 Revisitar qualquer exercício anterior que tenha ficado sem índice adequado e justificar, com `EXPLAIN ANALYZE` real, se ele precisa de correção agora que otimização foi formalizada.
  
